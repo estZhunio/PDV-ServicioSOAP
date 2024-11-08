@@ -6,18 +6,18 @@ public class Persona {
     private String apellido_per;
     private String dni_per;
     private String celular_per;
-    private String coreo_per;
+    private String correo_per;
 
     public Persona() {
     }
 
-    public Persona(int id_per, String nombre_per, String apellido_per, String dni_per, String celular_per, String coreo_per) {
+    public Persona(int id_per, String nombre_per, String apellido_per, String dni_per, String celular_per, String correo_per) {
         this.id_per = id_per;
         this.nombre_per = nombre_per;
         this.apellido_per = apellido_per;
         this.dni_per = dni_per;
         this.celular_per = celular_per;
-        this.coreo_per = coreo_per;
+        this.correo_per = correo_per;
     }
 
     public int getId_per() {
@@ -60,14 +60,13 @@ public class Persona {
         this.celular_per = celular_per;
     }
 
-    public String getCoreo_per() {
-        return coreo_per;
+    public String getCorreo_per() {
+        return correo_per;
     }
 
-    public void setCoreo_per(String coreo_per) {
-        this.coreo_per = coreo_per;
+    public void setCorreo_per(String correo_per) {
+        this.correo_per = correo_per;
     }
-    
     
     public Persona buscarP(String dni_per) {
         return null;

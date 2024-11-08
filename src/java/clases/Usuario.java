@@ -2,16 +2,16 @@ package clases;
 
 public class Usuario {
     private int id_usu;
-    private int id_per;
+    private int fk_id_per;
     private String usuario_usu;
     private String password_usu;
 
     public Usuario() {
     }
 
-    public Usuario(int id_usu, int id_per, String usuario_usu, String password_usu) {
+    public Usuario(int id_usu, int fk_id_per, String usuario_usu, String password_usu) {
         this.id_usu = id_usu;
-        this.id_per = id_per;
+        this.fk_id_per = fk_id_per;
         this.usuario_usu = usuario_usu;
         this.password_usu = password_usu;
     }
@@ -24,12 +24,12 @@ public class Usuario {
         this.id_usu = id_usu;
     }
 
-    public int getId_per() {
-        return id_per;
+    public int getFk_id_per() {
+        return fk_id_per;
     }
 
-    public void setId_per(int id_per) {
-        this.id_per = id_per;
+    public void setFk_id_per(int fk_id_per) {
+        this.fk_id_per = fk_id_per;
     }
 
     public String getUsuario_usu() {
