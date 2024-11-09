@@ -1,24 +1,27 @@
 package clases;
 
+import java.util.List;
+
 public class Rol {
-    private String id_rol;
+    private int id_rol;
     private String nombre_rol;
     private boolean estado_rol;
+    private List<Competencia> listaRol; 
 
     public Rol() {
     }
 
-    public Rol(String id_rol, String nombre_rol, boolean estado_rol) {
+    public Rol(int id_rol, String nombre_rol, boolean estado_rol) {
         this.id_rol = id_rol;
         this.nombre_rol = nombre_rol;
         this.estado_rol = estado_rol;
     }
 
-    public String getId_rol() {
+    public int getId_rol() {
         return id_rol;
     }
 
-    public void setId_rol(String id_rol) {
+    public void setId_rol(int id_rol) {
         this.id_rol = id_rol;
     }
 
@@ -45,4 +48,5 @@ public class Rol {
     public boolean estado(String nombre_rol) {
         return false;
     }
+    
 }

@@ -1,15 +1,18 @@
 package clases;
 
+import java.util.List;
+
 public class Usuario {
     private int id_usu;
-    private int fk_id_per;
+    private Persona fk_id_per;
     private String usuario_usu;
     private String password_usu;
+    private List<Rol> listaRoles;
 
     public Usuario() {
     }
 
-    public Usuario(int id_usu, int fk_id_per, String usuario_usu, String password_usu) {
+    public Usuario(int id_usu, Persona fk_id_per, String usuario_usu, String password_usu) {
         this.id_usu = id_usu;
         this.fk_id_per = fk_id_per;
         this.usuario_usu = usuario_usu;
@@ -24,11 +27,11 @@ public class Usuario {
         this.id_usu = id_usu;
     }
 
-    public int getFk_id_per() {
+    public Persona getFk_id_per() {
         return fk_id_per;
     }
 
-    public void setFk_id_per(int fk_id_per) {
+    public void setFk_id_per(Persona fk_id_per) {
         this.fk_id_per = fk_id_per;
     }
 
@@ -47,8 +50,16 @@ public class Usuario {
     public void setPassword_usu(String password_usu) {
         this.password_usu = password_usu;
     }
-    
-    public boolean siExiste(String id_per) {
-        return true;
+
+    public List<Rol> getListaRoles() {
+        return listaRoles;
     }
+
+    public void setListaRoles(List<Rol> listaRoles) {
+        this.listaRoles = listaRoles;
+    }
+
+    
+
+ 
 }
