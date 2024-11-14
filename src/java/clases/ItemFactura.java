@@ -1,7 +1,5 @@
 package clases;
 
-
-
 public class ItemFactura {
     private int id_item;
     private Factura fk_id_fac;
