@@ -1,57 +1,104 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package clases;
 
+import clases.Proveedor;
+import clases.Clasificacion;
+/**
+ *
+ * @author USER
+ */
 public class Producto {
-    private int id_pro;
-    private int stock_pro;
-    private double precioUnitario_pro;
-    private String unidad_pro;
-    private boolean iva_pro;
-    private int fk_id_cla;
-    private int fk_id_prov;
+    private int id_producto;
+    private int stock;
+    private double precio_unitario;
+    private String unidad;
+    private Clasificacion id_clasificaion;
+    private Proveedor id_proveedor;
+    private boolean iva;
 
     public Producto() {
     }
 
-    public Producto(int id_pro, int stock_pro, double precioUnitario_pro, String unidad_pro, boolean iva_pro, int fk_id_cla, int fk_id_prov) {
-        this.id_pro = id_pro;
-        this.stock_pro = stock_pro;
-        this.precioUnitario_pro = precioUnitario_pro;
-        this.unidad_pro = unidad_pro;
-        this.iva_pro = iva_pro;
-        this.fk_id_cla = fk_id_cla;
-        this.fk_id_prov = fk_id_prov;
-    }
-    
-    
-
-    public int getId_pro() {
-        return id_pro;
+    public Producto(int id_producto, int stock, double precio_unitario, String unidad, Clasificacion id_clasificaion, Proveedor id_proveedor, boolean iva) {
+        this.id_producto = id_producto;
+        this.stock = stock;
+        this.precio_unitario = precio_unitario;
+        this.unidad = unidad;
+        this.id_clasificaion = id_clasificaion;
+        this.id_proveedor = id_proveedor;
+        this.iva = iva;
     }
 
-    public int getStock_pro() {
-        return stock_pro;
+   
+
+  
+
+    public int getId_producto() {
+        return id_producto;
     }
 
-    public double getPrecioUnitario_pro() {
-        return precioUnitario_pro;
+    public void setId_producto(int id_producto) {
+        this.id_producto = id_producto;
     }
 
-    public String getUnidad_pro() {
-        return unidad_pro;
+    public int getStock() {
+        return stock;
     }
 
-    public boolean isIva_pro() {
-        return iva_pro;
+    public void setStock(int stock) {
+        this.stock = stock;
     }
 
-    public int getFk_id_cla() {
-        return fk_id_cla;
+    public double getPrecio_unitario() {
+        return precio_unitario;
     }
 
-    public int getFk_id_prov() {
-        return fk_id_prov;
+    public void setPrecio_unitario(double precio_unitario) {
+        this.precio_unitario = precio_unitario;
     }
-    
+
+    public String getUnidad() {
+        return unidad;
+    }
+
+    public void setUnidad(String unidad) {
+        this.unidad = unidad;
+    }
+
+    public Clasificacion getId_clasificaion() {
+        return id_clasificaion;
+    }
+
+    public void setId_clasificaion(Clasificacion id_clasificaion) {
+        this.id_clasificaion = id_clasificaion;
+    }
+
+    public Proveedor getId_proveedor() {
+        return id_proveedor;
+    }
+
+    public void setId_proveedor(Proveedor id_proveedor) {
+        this.id_proveedor = id_proveedor;
+    }
+
+
+
+    public boolean isIva() {
+        return iva;
+    }
+
+    public void setIva(boolean iva) {
+        this.iva = iva;
+    }
+
+    @Override
+    public String toString() {
+        return "Producto{" + "id_producto=" + id_producto + ", stock=" + stock + ", precio_unitario=" + precio_unitario + ", unidad=" + unidad + ", id_clasificaion=" + id_clasificaion + ", id_proveedor=" + id_proveedor + ", iva=" + iva + '}';
+    }
     
     
 }

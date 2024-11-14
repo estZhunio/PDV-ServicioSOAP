@@ -1,6 +1,9 @@
 package clases;
+import java.io.Serializable;
+import javax.xml.bind.annotation.XmlRootElement;
 
-public class TipoPago {
+@XmlRootElement
+public class TipoPago implements Serializable{
     
     private int id_pag;
     private String tipo_pag;

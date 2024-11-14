@@ -1,5 +1,6 @@
 package clases;
 
+
 public class Competencia {
     private int id_com;
     private String nombre_com;

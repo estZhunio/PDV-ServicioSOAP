@@ -1,4 +1,5 @@
 package clases;
+import java.io.Serializable;
 
 public class RolCompetencia {
     private Rol fk_id_rol;

@@ -1,14 +1,16 @@
 package clases;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Rol {
     private int id_rol;
     private String nombre_rol;
     private boolean estado_rol;
-    private List<Competencia> listaRol; 
+    private List<RolCompetencia> listaCompetencias; 
 
     public Rol() {
+        this.listaCompetencias = new ArrayList<>();
     }
 
     public Rol(int id_rol, String nombre_rol, boolean estado_rol) {
@@ -48,5 +50,18 @@ public class Rol {
     public boolean estado(String nombre_rol) {
         return false;
     }
+
+    public List<RolCompetencia> getListaCompetencias() {
+        return listaCompetencias;
+    }
+
+    public void setListaCompetencias(List<RolCompetencia> listaCompetencias) {
+        this.listaCompetencias = listaCompetencias;
+    }
+    
+    public void setListaCompetencias(ArrayList<RolCompetencia> listaCompetencias) {
+        this.listaCompetencias = listaCompetencias;
+    }
+    
     
 }
